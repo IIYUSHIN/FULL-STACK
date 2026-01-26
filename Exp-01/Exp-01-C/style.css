@@ -1,0 +1,102 @@
+:root {
+    --bg-start: #0b1220;
+    --bg-end: #020617;
+
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --text-color: #ffffff;
+}
+
+.light {
+    --bg-start: #eef2ff;
+    --bg-end: #e0e7ff;
+
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.15);
+    --text-color: #020617;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text-color);
+
+    background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+    grid-area: header;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 16px;
+    color: inherit;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    cursor: pointer;
+    backdrop-filter: blur(12px);
+}
+
+/* ---------- GLASS STYLE ---------- */
+
+.glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar {
+    grid-area: sidebar;
+    margin: 20px;
+    padding: 30px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+.content {
+    grid-area: content;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    height: 220px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
