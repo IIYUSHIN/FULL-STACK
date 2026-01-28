@@ -15,14 +15,26 @@
 
     <div class="toolbar">
         <div class="tool">
+            <label>Shape</label>
+            <select id="shapeSelect">
+                <option value="circle">Circle</option>
+                <option value="line">Line</option>
+            </select>
+        </div>
+
+        <div class="tool">
             <label>Color</label>
-            <input type="color" id="colorPicker">
+            <input type="color" id="colorPicker" value="#3b82f6">
         </div>
 
         <button id="undoBtn">Undo</button>
     </div>
 
-    <svg id="canvas" viewBox="0 0 1000 500"></svg>
+    <svg id="canvas" viewBox="0 0 100 50" preserveAspectRatio="none"></svg>
+
+    <div class="counter">
+        Shapes drawn: <span id="count">0</span>
+    </div>
 </div>
 
 <script src="script.js"></script>
