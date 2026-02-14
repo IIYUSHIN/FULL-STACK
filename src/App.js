@@ -1,3 +1,3 @@
-import App from "./EXP03/EXP03-C/App";
+import App from "./Navigation";
 
 export default App;
