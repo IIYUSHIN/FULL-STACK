@@ -7,24 +7,17 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
     "framer-motion": "^12.34.0",
-    "mongoose": "^9.2.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-scripts": "5.0.1",
-    "redis": "^5.11.0",
-    "uuid": "^13.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "EXP04-B": "nodemon src/EXP04/EXP04-B/server.js",
-    "EXP04-C": "nodemon src/EXP04/EXP04-C/index.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
